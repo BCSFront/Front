@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+
+@layer base {
+  html {
+    @apply font-Nunito;
+  }
+}
+
+@layer components {
+  .btn-sample {
+    @apply flex justify-center w-28 py-2 bg-red-300 rounded-lg my-2;
+  }
+}
+
+.text-title {
+  font-size: 44px;
+  line-height: 70.4px;
+  color: #212121;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100vh;
+  background: rebeccapurple;
+}
+
+/* 화면 */
+.iphone-container {
+  width: 414px;
+  height: 896px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  z-index: 1;
+  background: red;
+}
