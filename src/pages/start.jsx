@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
+import "../style/start.css";
 const Start = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <div className=" w-48 h-72 p-[13.3px] flex flex-col justify-start items-center gap-5 ">
-        <div className=" bg-[#6949FF] w-44 h-44 rounded-2xl" />
+    <Link to="/welcome">
+      <div className="flex flex-col items-center min-h-screen ">
+        <div className="mt-[270px] flex flex-col justify-start items-center mb-[20px] logo ">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
         <div className="text-title">Ethcation</div>
       </div>
-    </div>
+    </Link>
   );
 };
 export default Start;

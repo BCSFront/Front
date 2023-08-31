@@ -2,30 +2,30 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Statusbar } from "./components/Statusbar";
 import Main from "./pages/main";
-import Selection from "./pages/selection";
-import Learning1 from "./pages/learning";
-import Learning2 from "./pages/learning2";
-import Learning3 from "./pages/learning3";
+import SignUp from "./pages/signUp";
+import SignUp2 from "./pages/signUp2";
+import Welcome from "./pages/welcome";
+import Welcome2 from "./pages/welcome2";
+import Welcome3 from "./pages/welcome3";
 import Login from "./pages/login";
 import Home from "./pages/home";
 import Start from "./pages/start";
-import Welcome from "./pages/welcome";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="iphone-container">
+      <div className="iphone-container ">
         <Statusbar />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/selection" element={<Selection />} />
-          <Route path="/learning1" element={<Learning1 />} />
-          <Route path="/learning2" element={<Learning2 />} />
-          <Route path="/learning3" element={<Learning3 />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/signUp2" element={<SignUp2 />} />
+          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/welcome2" element={<Welcome2 />} />
+          <Route path="/welcome3" element={<Welcome3 />} />
           <Route path="/login" element={<Login />} />
           <Route path="/start" element={<Start />} />
-          <Route path="/welcome" element={<Welcome />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
-    <div className="bg-blue-300 flex flex-col justify-center items-center min-h-screen">
+    <div className="bg-red-100 ">
       <Link to="/login" className="btn-sample">
         login
       </Link>
@@ -18,14 +18,14 @@ const Main = () => {
       <Link to="/selection" className="btn-sample">
         selection
       </Link>
-      <Link to="/learning1" className="btn-sample">
-        Learning1
+      <Link to="/welcome1" className="btn-sample">
+        Welcome1
       </Link>
-      <Link to="/learning2" className="btn-sample">
-        Learning2
+      <Link to="/welcome2" className="btn-sample">
+        Welcome2
       </Link>
-      <Link to="/learning3" className="btn-sample">
-        Learning3
+      <Link to="/welcome3" className="btn-sample">
+        Welcome3
       </Link>
     </div>
   );

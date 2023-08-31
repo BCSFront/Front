@@ -1,0 +1,27 @@
+.btnBig {
+  display: flex;
+  width: 332px;
+  height: 58px;
+  padding: 18px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--primary-500, #6949ff);
+  box-shadow: 4px 8px 24px 0px rgba(105, 73, 255, 0.25);
+}
+
+.btnSmall {
+  display: flex;
+  width: 183px;
+  height: 58px;
+  padding: 18px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--primary-500, #6949ff);
+  box-shadow: 4px 8px 24px 0px rgba(105, 73, 255, 0.25);
+}
