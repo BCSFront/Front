@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .name {
   width: 362px;
   color: var(--greyscale-900, #212121);

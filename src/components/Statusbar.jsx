@@ -13,7 +13,7 @@ export const Statusbar = () => {
   }, []);
 
   return (
-    <div className="w-[358px] h-[21px]  flex justify-between items-center mt-[13px] mx-[26px]">
+    <div className="w-[358px] h-[21px]  flex justify-between items-center mt-[13px] mx-[26px] bg-transparent">
       <div>{currentTime}</div>
       <div className="flex gap-2 items-center">
         <img src="./images/statusIcon.svg" alt="icon" />

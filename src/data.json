@@ -1,3 +1,15 @@
 {
-  "title": ["aaaa", "bbbb", "cccc", "dddd", "eeee"]
+  "title": ["aaaa", "bbbb", "cccc", "dddd", "eeee"],
+  "time": [
+    ["5 mins / day", "Relax"],
+    ["10 mins / day", "Normal"],
+    ["15 mins / day", "Serious"],
+    ["30 mins / day", "Great"],
+    ["60 mins / day", "Awesome"]
+  ],
+  "chapter": [
+    ["Mastering a lot of", "ethereum slakilkj"],
+    ["Mastering a lot of", "ethereum slakilkj"],
+    ["Mastering a lot of", "ethereum slakilkj"]
+  ]
 }
