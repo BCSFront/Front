@@ -1,18 +1,28 @@
-import Box1 from "../components/BoxLarge";
 import data from "../data.json";
+import "../style/welcome3.css";
+import BoxSmall from "../components/BoxSmall";
+import BtnContinue from "../components/BtnContinue";
+import { Link } from "react-router-dom";
 const Welcome3 = () => {
   return (
-    <div className="flex flex-col items-center min-h-screen bg-red-400">
-      <div className="mt-[46px] mx-[26px]">
-        what is your daily study target?
+    <div className="overflow-y-auto">
+      <div className="flex flex-col items-center justify-between grow">
+        <div className="text-title px-[20px] mt-[76px] w-[362px] h-[176px] ">
+          What is your daily study target?
+        </div>
+        <div className="mt-[85px] ">
+          <div className="w-[336px] ">
+            {data.time.map((v) => (
+              <BoxSmall time={v[0]} difficulty={v[1]}></BoxSmall>
+            ))}
+          </div>
+        </div>
+        <Link to="/home">
+          <BtnContinue title="CONTINUE" className="mb-[55px] mx-[41px]" />
+        </Link>
       </div>
-      <div className="mt-[93px]">
-        {data.title.map((v, i) => (
-          <Box1 title={v} />
-        ))}
-      </div>
-      <div className="absolute bottom-[19px]">button</div>
     </div>
   );
 };
+
 export default Welcome3;

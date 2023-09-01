@@ -51,3 +51,54 @@ body {
     z-index: 1;
     background: white;
 }
+
+/* merge ------------------------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+body {
+    margin: 0;
+    line-height: normal;
+}
+:root {
+    /* fonts */
+    --body-xlarge-regular: Nunito;
+    --body-xlarge-semibold: Nunito;
+
+    /* font sizes */
+    --body-xlarge-regular-size: 18px;
+    --h5-bold-size: 20px;
+    --h4-bold-size: 24px;
+    --body-large-bold-size: 16px;
+    /* --body-xlarge-semibold-size: 18px; */
+
+    /* Colors */
+    --white: #fff;
+    --greyscale-900: #212121;
+    --greyscale-100: #f5f5f5;
+    --greyscale-200: #eee;
+    --greyscale-700: #616161;
+    --primary-500: #6949ff;
+    --primary-100: #f0edff;
+    --alerts-status-success: #12d18e;
+    --others-white: #fff;
+    --alerts-status-error: #f75555;
+
+    /* Gaps */
+    --gap-5xl: 24px;
+    --gap-base: 16px;
+    --gap-5xs: 8px;
+    --gap-xl: 20px;
+
+    /* Paddings */
+    --padding-5xl: 24px;
+    --padding-17xl: 36px;
+    --padding-lg: 18px;
+    --padding-base: 16px;
+
+    /* border radiuses */
+    --br-sm: 14px;
+    --br-81xl: 100px;
+
+    /* Effects */
+    --button-shadow-1: 4px 8px 24px rgba(105, 73, 255, 0.25);
+}

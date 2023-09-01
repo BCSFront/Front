@@ -2,7 +2,7 @@ import "../style/arrow.css";
 
 const Arrow2 = ({ num }) => {
     return (
-        <div className="box1 w-[48px]mt-[37px] mx-[26px] ">
+        <div className="box1 w-[48px] mt-[37px] mx-[26px] ">
             <img src="../images/x.svg" alt="" />
 
             {/* 상태바 */}
@@ -16,17 +16,6 @@ const Arrow2 = ({ num }) => {
                 >
                     <rect width="216" height="12" rx="6" fill="#EEEEEE" />
                 </svg>
-
-                {/* <svg
-                    className="zIndex-1"
-                    width="108"
-                    height="12"
-                    viewBox="0 0 108 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <rect width="108" height="12" rx="6" fill="#6949FF" />
-                </svg> */}
             </div>
             {/* 하트 */}
             <div className="flex items-center gap-[8px]   ">

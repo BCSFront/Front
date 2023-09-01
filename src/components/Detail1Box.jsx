@@ -26,6 +26,14 @@ const Detail1Box = ({ detail, setAnswer, answer }) => {
         >
             <div className="detail1-box2">{detail}</div>
         </button>
+        // <button
+        //     onClick={handleClick}
+        //     className={`w-[336px] mb-[20px] detail1-box1 ${
+        //         isActive || answer === detail ? "clicked-style" : ""
+        //     }`}
+        // >
+        //     <div className="detail1-box2">{detail}</div>
+        // </button>
     );
 };
 export default Detail1Box;

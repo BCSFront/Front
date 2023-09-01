@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const GModal = ({ title, title2 }) => {
     return (
-        <div className="mx-auto">
-            <div className="gmodal-box1  m-[24px]">
+        <div className=" mx-auto">
+            <div className="gmodal-box1  m-[20px]">
                 <div>
                     <div className="flex mb-[24px]">
                         <img

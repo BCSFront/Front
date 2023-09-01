@@ -1,21 +1,30 @@
-import Box1 from "../components/BoxLarge";
+import BoxLarge from "../components/BoxLarge";
+import BtnContinue from "../components/BtnContinue";
 import data from "../data.json";
+import { Link } from "react-router-dom";
+
 const Welcome2 = () => {
   return (
     <>
-      <div className=" bg-red-200 overflow-y-auto">
-        <div className=" flex flex-col justify-center items-center ">
-          <div className="mt-[87px] mx-[26px] text-title">
-            <div>This is</div>
-            <div>what you can</div>
-            <div>achieve!</div>
+      <div className=" overflow-y-auto">
+        <div className="flex flex-col items-center justify-between grow ">
+          <div className="w-[362px] h-[176px] mt-[76px] px-[20px] ">
+            <div className="text-title">
+              <div>This is</div>
+              <div>what you can</div>
+              <div>achieve!</div>
+            </div>
           </div>
           <div className="mt-[85px]">
-            {data.title.map((v, i) => (
-              <Box1 title={v} />
+            {data.chapter.map((v) => (
+              <BoxLarge title={v[0]} desc={v[1]}></BoxLarge>
             ))}
           </div>
-          <div className="mt-[20px] ">button</div>
+          <div className="mt-[20px] ">
+            <Link to="/welcome3">
+              <BtnContinue title="CONTINUE" />
+            </Link>
+          </div>
         </div>
       </div>
     </>
