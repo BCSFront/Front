@@ -5,7 +5,7 @@ import { Statusbar } from "../components/Statusbar";
 import { useEffect, useContext } from "react";
 import { AppContext } from "../App";
 
-const Home = () => {
+const Home2 = () => {
   const { setBgPurple } = useContext(AppContext);
   useEffect(() => {
     setBgPurple(2);
@@ -24,11 +24,11 @@ const Home = () => {
         <div className="mt-[50px] pb-[95px]">
           <img src="./images/home.svg" alt="" />
         </div>
-        <Link to="/home2">
+        <Link to="/mypage">
           <BtnContinue title="START" />
         </Link>
       </div>
     </div>
   );
 };
-export default Home;
+export default Home2;
