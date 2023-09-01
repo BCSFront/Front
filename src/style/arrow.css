@@ -16,3 +16,36 @@
   justify-content: center;
   align-items: center;
 }
+
+.box1 {
+  display: flex;
+  height: 48px;
+  padding: 12px 0px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.box1-1 {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  padding: 6.416px 4.667px 5.777px 4.083px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2-1 {
+  color: var(--greyscale-900, #212121);
+  text-align: right;
+  /* H5/bold */
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 32px */
+}
+.white-bar {
+  border-radius: 100px;
+  background: var(--primary-500, #6949ff);
+}

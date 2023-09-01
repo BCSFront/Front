@@ -1,8 +1,4 @@
-import React, {
-  useEffect,
-  useState,
-  useContext,
-} from "react"; /*time 가지고오기? */
+import React, { useEffect, useState, useContext } from "react";
 import { AppContext } from "../App";
 
 export const Statusbar = () => {

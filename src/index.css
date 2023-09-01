@@ -52,7 +52,7 @@ body {
   background: white;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 body {
   margin: 0;
   line-height: normal;
@@ -60,12 +60,14 @@ body {
 :root {
   /* fonts */
   --body-xlarge-regular: Nunito;
+  --body-xlarge-semibold: Nunito;
 
   /* font sizes */
   --body-xlarge-regular-size: 18px;
   --h5-bold-size: 20px;
   --h4-bold-size: 24px;
   --body-large-bold-size: 16px;
+  /* --body-xlarge-semibold-size: 18px; */
 
   /* Colors */
   --white: #fff;
@@ -75,10 +77,15 @@ body {
   --greyscale-700: #616161;
   --primary-500: #6949ff;
   --primary-100: #f0edff;
+  --alerts-status-success: #12d18e;
+  --others-white: #fff;
+  --alerts-status-error: #f75555;
 
   /* Gaps */
   --gap-5xl: 24px;
   --gap-base: 16px;
+  --gap-5xs: 8px;
+  --gap-xl: 20px;
 
   /* Paddings */
   --padding-5xl: 24px;

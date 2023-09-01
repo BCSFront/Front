@@ -12,6 +12,10 @@ import Home from "./pages/home";
 import Home2 from "./pages/home2";
 import Start from "./pages/start";
 import Mypage from "./pages/mypage";
+import Topic from "./pages/topic";
+import Detail from "./pages/detail";
+import ChallengeTarget from "./pages/challengeTarget";
+import ChallengeBadge from "./pages/challengeBadge";
 import { createContext, useState } from "react";
 export const AppContext = createContext();
 
@@ -20,6 +24,7 @@ function App() {
   const [privateKey, setPrivateKey] = useState("");
   const [bgPurple, setBgPurple] = useState(1);
   const [nickName, setNickName] = useState("");
+
   return (
     <AppContext.Provider
       value={{
@@ -48,6 +53,10 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/start" element={<Start />} />
             <Route path="/mypage" element={<Mypage />} />
+            <Route path="/topic" element={<Topic />} />
+            <Route path="/detail/:id" element={<Detail />} />
+            <Route path="/challengeTarget" element={<ChallengeTarget />} />
+            <Route path="/challengeBadge" element={<ChallengeBadge />} />
           </Routes>
         </div>
       </BrowserRouter>

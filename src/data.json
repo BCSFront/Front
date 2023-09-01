@@ -11,5 +11,23 @@
     ["Mastering a lot of", "ethereum slakilkj"],
     ["Mastering a lot of", "ethereum slakilkj"],
     ["Mastering a lot of", "ethereum slakilkj"]
+  ],
+
+  "topic": ["Topic 2", "Topic 3", "Topic 4", "Topic 5", "Topic 6"],
+  "detail": [
+    ["Previous Hash", "Coinbase", "State Root", "Merkle Root"],
+    [
+      "Public Key Encryption",
+      "Short-Term Data Protection",
+      "Digital Signatures",
+      "Security Protocols"
+    ]
+  ],
+
+  "dailyMission": [
+    "Get hearts",
+    "Get Badges",
+    "Get 2 perfect lessons",
+    "Complete  Challenge"
   ]
 }

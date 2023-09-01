@@ -66,3 +66,13 @@
   line-height: 140%; /* 25.2px */
   letter-spacing: 0.2px;
 }
+.small {
+  display: flex;
+  padding: 24px;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 14px;
+  border: 2px solid var(--greyscale-200, #eee);
+  background: var(--others-white, #fff);
+}

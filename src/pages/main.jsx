@@ -27,6 +27,16 @@ const Main = () => {
       <Link to="/welcome3" className="btn-sample">
         Welcome3
       </Link>
+      <Link to="/topic" className="btn-sample">
+        Topic
+      </Link>
+
+      <Link to="/challengeTarget" className="btn-sample">
+        ChallengeTarget
+      </Link>
+      <Link to="/challengeBadge" className="btn-sample">
+        ChallengeBdge 안녕
+      </Link>
     </div>
   );
 };
