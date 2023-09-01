@@ -55,7 +55,7 @@ const Topic = () => {
 
                 <div>
                     <div className="mx-[39px]">
-                        <Link to="/detail1">
+                        <Link to="/detail/1">
                             <div className="mb-[20px] topic-box1">
                                 <div className="topic-box2">Topic 1</div>
                                 <svg

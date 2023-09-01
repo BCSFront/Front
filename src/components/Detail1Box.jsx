@@ -20,7 +20,7 @@ const Detail1Box = ({ detail, setAnswer, answer }) => {
     return (
         <button
             onClick={handleClick}
-            className={`mb-[20px] detail1-box1 ${
+            className={` w-[336px] mb-[20px] detail1-box1 ${
                 isActive ? "clicked-style" : ""
             }`}
         >
