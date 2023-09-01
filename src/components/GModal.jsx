@@ -1,7 +1,14 @@
 import "../style/gmodal.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AppContext } from "../App";
 
 const GModal = ({ title, title2 }) => {
+    const { num, setNum, showModal, setShowModal } = useContext(AppContext);
+    const onClickBtn = () => {
+        setNum(num + 100);
+        setShowModal(!showModal);
+    };
     return (
         <div className=" mx-auto">
             <div className="gmodal-box1  m-[20px]">
@@ -30,12 +37,14 @@ const GModal = ({ title, title2 }) => {
                         />
                     </div>
                 </div>
-                <button className="gmodal-button">
-                    <Link to="/detail/2">
-                        {/* <div className="gmodal-button-text"> CONTINUE </div> */}
-                        <div className="gmodal-button-text"> {title2}</div>
-                    </Link>
-                </button>
+                <Link to="/detail/2">
+                    <button
+                        className="gmodal-button gmodal-button-text"
+                        onClick={onClickBtn}
+                    >
+                        {title2}
+                    </button>
+                </Link>
             </div>
         </div>
     );

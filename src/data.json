@@ -1,33 +1,33 @@
 {
-  "title": ["aaaa", "bbbb", "cccc", "dddd", "eeee"],
-  "time": [
-    ["5 mins / day", "Relax"],
-    ["10 mins / day", "Normal"],
-    ["15 mins / day", "Serious"],
-    ["30 mins / day", "Great"],
-    ["60 mins / day", "Awesome"]
-  ],
-  "chapter": [
-    ["Mastering a lot of", "ethereum slakilkj"],
-    ["Mastering a lot of", "ethereum slakilkj"],
-    ["Mastering a lot of", "ethereum slakilkj"]
-  ],
+    "title": ["aaaa", "bbbb", "cccc", "dddd", "eeee"],
+    "time": [
+        ["5 mins / day", "Relax"],
+        ["10 mins / day", "Normal"],
+        ["15 mins / day", "Serious"],
+        ["30 mins / day", "Great"],
+        ["60 mins / day", "Awesome"]
+    ],
+    "chapter": [
+        ["Mastering a lot of", "ethereum slakilkj"],
+        ["Mastering a lot of", "ethereum slakilkj"],
+        ["Mastering a lot of", "ethereum slakilkj"]
+    ],
 
-  "topic": ["Topic 2", "Topic 3", "Topic 4", "Topic 5", "Topic 6"],
-  "detail": [
-    ["Previous Hash", "Coinbase", "State Root", "Merkle Root"],
-    [
-      "Public Key Encryption",
-      "Short-Term Data Protection",
-      "Digital Signatures",
-      "Security Protocols"
+    "topic": ["Topic 2", "Topic 3", "Topic 4", "Topic 5", "Topic 6"],
+    "detail": [
+        ["Previous Hash", "Coinbase", "State Root", "Merkle Root"],
+        [
+            "Public Key Encryption",
+            "Short-Term Data Protection",
+            "Digital Signatures",
+            "Security Protocols"
+        ]
+    ],
+
+    "dailyMission": [
+        ["Get hearts", "1/30", "💖"],
+        ["Get Badges", "1/100", "✨"],
+        ["Get 2 perfect lessons", "0/2", "🫣"],
+        ["Complete  Challenge", "0/50", "🤔"]
     ]
-  ],
-
-  "dailyMission": [
-    "Get hearts",
-    "Get Badges",
-    "Get 2 perfect lessons",
-    "Complete  Challenge"
-  ]
 }

@@ -1,0 +1,188 @@
+.box1 {
+    display: flex;
+    height: 48px;
+    padding: 12px 0px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.account-box {
+    flex: 1 0 0;
+    color: var(--greyscale-900, #212121);
+    /* H4/bold */
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 38.4px */
+}
+
+.home {
+    align-self: stretch;
+    color: var(--greyscale-500, #9e9e9e);
+    text-align: center;
+    /* body/xsmall/medium */
+    font-family: Nunito;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.mypage {
+    align-self: stretch;
+    color: var(--greyscale-500, #9e9e9e);
+    text-align: center;
+    /* body/xsmall/medium */
+    font-family: Nunito;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 12px; */
+    align-self: stretch;
+}
+.pimg {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+.text {
+    align-self: stretch;
+    color: var(--greyscale-900, #212121);
+    text-align: center;
+    /* H3/bold */
+    font-family: Nunito;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 51.2px */
+}
+.text2 {
+    color: var(--greyscale-800, #424242);
+    text-align: center;
+    /* body/large/medium */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.2px;
+}
+.line {
+    width: 336px;
+    height: 1px;
+    background: #eee;
+}
+.protext {
+    align-self: stretch;
+    color: var(--greyscale-900, #212121);
+    text-align: center;
+    /* H5/bold */
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+}
+
+.protext2 {
+    align-self: stretch;
+    color: var(--greyscale-800, #424242);
+    text-align: center;
+    /* body/large/medium */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.2px;
+}
+.challenge {
+    width: 38px;
+
+    flex: 1 0 0;
+    color: var(--greyscale-900, #212121);
+    /* H4/bold */
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 38.4px */
+}
+.btn {
+    color: var(--others-white, #fff);
+    text-align: center;
+    /* body/xlarge/bold */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 0.2px;
+    width: 162px;
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 100px;
+    background: var(--primary-500, #6949ff);
+}
+
+.mission {
+    flex: 1 0 0;
+    color: var(--greyscale-900, #212121);
+    /* H4/bold */
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 38.4px */
+}
+
+.nft-card1 {
+    display: flex;
+    width: 336px;
+    height: 405px;
+    padding: 24px 24px 20px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    border: 2px solid var(--greyscale-300, #e0e0e0);
+    background: var(--others-white, #fff);
+}
+.t2023 {
+    flex: 1 0 0;
+    color: var(--greyscale-900, #212121);
+    /* H4/bold */
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 38.4px */
+}
+
+.tnft {
+    width: 82px;
+    color: var(--greyscale-700, #616161);
+    text-align: right;
+    /* H5/bold */
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+}

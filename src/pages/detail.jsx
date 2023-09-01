@@ -5,27 +5,21 @@ import GModal from "../components/GModal";
 import RModal from "../components/RModal";
 import data from "../data.json";
 import "../style/detail.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
+import { AppContext } from "../App";
 
 const Detail = () => {
-    const [showModal, setShowModal] = useState(false);
-
     const { id } = useParams();
     const [answer, setAnswer] = useState();
-
+    const { num, setNum, showModal, setShowModal } = useContext(AppContext);
     // const onClickCheckA = ()  => {
 
     // }
-    useEffect(() => {
-        setShowModal(false);
-    }, [id]);
+
     useEffect(() => {
         console.log(answer);
     }, [answer]);
-    // useEffect(() => {
-    //     console.log(id);
-    // }, []);
 
     return (
         <div className="overflow-y-auto">
@@ -33,7 +27,7 @@ const Detail = () => {
                 <div>
                     {" "}
                     <Link to="/topic">
-                        <Arrow2 num={200} />
+                        <Arrow2 num={num} />
                         {/* {" "}
                     d = data.image[ id - 1 ] */}
                     </Link>
@@ -70,18 +64,14 @@ const Detail = () => {
                 </div>
                 {/* <Link to="/detail"> */}
                 {/* 보라색 버튼 ~! */}
-                <div className=" checkABox ml-[21px] ">
-                    <div
-                        onClick={() => setShowModal(!showModal)}
-                        // onCLick={onClickCheckA}
-                    >
-                        {/* CHECK ANSWER */}
-
-                        <BtnContinue title="CHECK ANSWER" />
-                    </div>
+                <div
+                    className=" checkABox ml-[21px] "
+                    onClick={() => setShowModal(!showModal)}
+                >
+                    <BtnContinue title="CHECK ANSWER" />
                 </div>
                 {/* </Link> */}
-                {showModal && <GModal title=" Correct!" title2="CONTINUE" />}
+                {showModal && <GModal title="Correct!" title2="CONTINUE" />}
 
                 {/* <RModal /> */}
             </div>
