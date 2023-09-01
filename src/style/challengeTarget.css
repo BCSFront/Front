@@ -1,0 +1,46 @@
+.buttonBox {
+    display: flex;
+    width: 336px;
+    height: 45px;
+    align-items: flex-start;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.cardBox {
+    display: flex;
+    width: 336px;
+    padding: 24px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 14px;
+    border: 2px solid var(--greyscale-200, #eee);
+    background: var(--others-white, #fff);
+}
+
+.icon {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    padding: 8.875px 6.132px 8.694px 6.375px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.cardText {
+    color: var(--greyscale-900, #212121);
+    /* H4/bold */
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 38.4px */
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}

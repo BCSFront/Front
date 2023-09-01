@@ -1,0 +1,13 @@
+.rectangle {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+.union {
+  width: 238px;
+  height: 148.733px;
+  flex-shrink: 0;
+  fill: var(--greyscale-50, #fafafa);
+  stroke-width: 2px;
+  stroke: var(--greyscale-200, #eee);
+}
