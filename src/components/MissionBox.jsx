@@ -1,33 +1,25 @@
 import "../style/challengeTarget.css";
 
 const MissionBox = (props) => {
-    return (
-        <div className="cardBox  mt-[20px] mb-[20px]">
-            {/* <DetailQuestion
-                    text={data.question[id - 1].text}
-                    img={data.question[id - 1].img}
-                /> */}
-            <div className="icon bg-emerald-100">{props.emoticon}</div>
-            <div className="mr-[24px]">
-                <div className="cardText ">{props.detail1}</div>
-                <div className="status mb-[24px] mt-[8px] h-[12px]">
-                    {/* 여기도 상태 바가 필요한데ㅜㅜ */}
-                    <svg
-                        width="136"
-                        height="13"
-                        viewBox="0 0 136 13"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <rect
-                            y="0.5"
-                            width="136"
-                            height="12"
-                            rx="6"
-                            fill="#EEEEEE"
-                        />
-                    </svg>
-                    {/* <svg
+  return (
+    <div className="cardBox  mt-[20px] mb-[20px]">
+      <div className="icon ">
+        <img src={props.emoticon} alt="" />
+      </div>
+      <div className="mr-[24px]">
+        <div className="cardText ">{props.detail1}</div>
+        <div className="status mb-[24px] mt-[8px] h-[12px]">
+          {/* 여기도 상태 바가 필요한데ㅜㅜ */}
+          <svg
+            width="136"
+            height="13"
+            viewBox="0 0 136 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="0.5" width="136" height="12" rx="6" fill="#EEEEEE" />
+          </svg>
+          {/* <svg
                         width="47"
                         height="16"
                         viewBox="0 0 47 16"
@@ -39,10 +31,10 @@ const MissionBox = (props) => {
                             fill="#6949FF"
                         />
                     </svg> */}
-                    <div className="tttext">{props.ptext}</div>
-                </div>
-            </div>
+          <div className="tttext">{props.ptext}</div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 export default MissionBox;

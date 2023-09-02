@@ -8,7 +8,9 @@ import { AppContext } from "../App";
 
 const SignUp = () => {
   const { nickName, setNickName } = useContext(AppContext);
-
+  useEffect(() => {
+    console.log(nickName);
+  }, [nickName]);
   return (
     <div className="flex flex-col items-center justify-between grow">
       <div>

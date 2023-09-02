@@ -11,51 +11,66 @@ import { AppContext } from "../App";
 import DetailQuestion from "../components/DetailQuestion";
 
 const Detail = () => {
-    const { id } = useParams();
-    const [answer, setAnswer] = useState();
-    const { num, setNum, showModal, setShowModal } = useContext(AppContext);
+  const { id } = useParams();
+  const [answer, setAnswer] = useState();
+  const [isActive, setIsActive] = useState([]);
+  const { num, setNum, showModal, setShowModal } = useContext(AppContext);
 
-    useEffect(() => {
-        console.log(answer);
-    }, [answer]);
+  useEffect(() => {
+    console.log(answer);
+  }, [answer]);
 
-    return (
-        <div className="overflow-y-auto">
-            <div className="flex flex-col justify-center min-h-screen">
-                <Link to="/topic">
-                    <Arrow2 num={num} />
-                </Link>
+  return (
+    <>
+      <div className="overflow-y-auto flex">
+        <div className="flex flex-col justify-start min-h-screen">
+          <Link to="/topic">
+            <Arrow2 num={num} />
+          </Link>
 
-                <DetailQuestion
-                    text={data.question[id - 1].text}
-                    img={data.question[id - 1].img}
+          <DetailQuestion
+            text={data.question[id - 1].text}
+            img={data.question[id - 1].img}
+          />
+
+          <div className="line mt-[33px] mb-[20px]"></div>
+
+          <div className="mt-[24px] mx-[39px] mb-[52px]">
+            <div>
+              {data?.detail[id - 1].map((v, i) => (
+                <Detail1Box
+                  key={i}
+                  idx={i}
+                  detail={v}
+                  answer={answer}
+                  setAnswer={setAnswer}
+                  isActive={isActive}
+                  setIsActive={setIsActive}
                 />
-
-                <div className="line mt-[33px] mb-[20px]"></div>
-
-                <div className="mt-[24px] mx-[39px] mb-[52px]">
-                    <div>
-                        {data.detail[id - 1].map((v, i) => (
-                            <Detail1Box
-                                key={i}
-                                detail={v}
-                                answer={answer}
-                                setAnswer={setAnswer}
-                            />
-                        ))}
-                    </div>
-                </div>
-
-                <div
-                    className=" checkABox ml-[21px] "
-                    onClick={() => setShowModal(!showModal)}
-                >
-                    <BtnContinue title="CHECK ANSWER" />
-                </div>
-
-                {showModal && <GModal title="Correct!" title2="CONTINUE" />}
+              ))}
             </div>
+          </div>
+
+          <div
+            className="checkABox ml-[21px] "
+            onClick={() => setShowModal(!showModal)}
+          >
+            <BtnContinue title="CHECK ANSWER" />
+          </div>
         </div>
-    );
+      </div>
+      <div>
+        {showModal && (
+          <GModal
+            length={data.detail.length}
+            index={Number(id) + 1}
+            title="Correct!"
+            title2="CONTINUE"
+            className="relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all "
+          />
+        )}
+      </div>
+    </>
+  );
 };
 export default Detail;
