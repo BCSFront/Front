@@ -6,33 +6,32 @@ import { useEffect, useContext } from "react";
 import { AppContext } from "../App";
 
 const Welcome = () => {
-    const { address } = useContext(AppContext);
-    return (
-        <div className="flex flex-col items-center justify-between grow ">
-            <img
-                src="./images/bubble welcome.svg"
-                alt="union"
-                className="mt-[144.5px]"
-            />
-            <div className="mt-[35.5px] rectangle ">
-                {" "}
-                <img src="./images/avator.svg" alt="avator" />
-            </div>
-            <div className="mt-[31px] text-title">Ethcation</div>
-            <div className="text-detail mt-[4px] flex flex-col justify-center items-center mb-[156px]">
-                <div>Learn Ethereum</div>
-                <div>whenever and wherever you want.</div>
-            </div>
-            {address == "" ? (
-                <Link to="/signUp">
-                    <BtnContinue title="CREATE A PROFILE"></BtnContinue>
-                </Link>
-            ) : (
-                <Link to="/home">
-                    <BtnContinue title="Login"></BtnContinue>
-                </Link>
-            )}
-        </div>
-    );
+  const { address } = useContext(AppContext);
+  return (
+    <div className="flex flex-col items-center justify-between grow ">
+      <img
+        src="./images/bubble welcome.svg"
+        alt="union"
+        className="mt-[144.5px]"
+      />
+      <div className="mt-[35.5px] rectangle ">
+        <img src="./images/avator.svg" alt="avator" />
+      </div>
+      <div className="mt-[31px] text-title">Ethcation</div>
+      <div className="text-detail mt-[4px] flex flex-col justify-center items-center mb-[156px]">
+        <div>Learn Ethereum</div>
+        <div>whenever and wherever you want.</div>
+      </div>
+      {address == "" ? (
+        <Link to="/signUp">
+          <BtnContinue title="CREATE A PROFILE"></BtnContinue>
+        </Link>
+      ) : (
+        <Link to="/home">
+          <BtnContinue title="Login"></BtnContinue>
+        </Link>
+      )}
+    </div>
+  );
 };
 export default Welcome;

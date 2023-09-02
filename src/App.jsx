@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Statusbar } from "./components/Statusbar";
-import Main from "./pages/main";
 import SignUp from "./pages/signUp";
 import SignUp2 from "./pages/signUp2";
 import Welcome from "./pages/welcome";
@@ -48,7 +47,6 @@ function App() {
         <div className="iphone-container ">
           <Statusbar />
           <Routes>
-            <Route path="/" element={<Main />} />
             <Route path="/home" element={<Home />} />
             <Route path="/home2" element={<Home2 />} />
             <Route path="/signUp" element={<SignUp />} />
@@ -57,7 +55,7 @@ function App() {
             <Route path="/welcome2" element={<Welcome2 />} />
             <Route path="/welcome3" element={<Welcome3 />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/start" element={<Start />} />
+            <Route path="/" element={<Start />} />
             <Route path="/mypage" element={<Mypage />} />
             <Route path="/topic" element={<Topic />} />
             <Route path="/detail/:id" element={<Detail />} />
