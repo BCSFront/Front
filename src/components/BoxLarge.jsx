@@ -4,7 +4,7 @@ const Box1 = (props) => {
     <div className="mb-[20px] inside flex justify-center items-center">
       <div className="w-[284px] h-[92px] flex justify-between ">
         <img
-          src="./images/doc.svg"
+          src={`./images/${props.img}.svg`}
           alt="doc"
           className="w-[44px] h-[44px] px-[6.42px] py-[3.667px]"
         />

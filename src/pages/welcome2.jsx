@@ -17,7 +17,7 @@ const Welcome2 = () => {
           </div>
           <div className="mt-[85px]">
             {data.chapter.map((v) => (
-              <BoxLarge title={v[0]} desc={v[1]}></BoxLarge>
+              <BoxLarge img={v[0]} title={v[1]} desc={v[2]}></BoxLarge>
             ))}
           </div>
           <div className="mt-[20px] ">

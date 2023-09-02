@@ -1,33 +1,61 @@
 {
-    "title": ["aaaa", "bbbb", "cccc", "dddd", "eeee"],
-    "time": [
-        ["5 mins / day", "Relax"],
-        ["10 mins / day", "Normal"],
-        ["15 mins / day", "Serious"],
-        ["30 mins / day", "Great"],
-        ["60 mins / day", "Awesome"]
+  "title": ["aaaa", "bbbb", "cccc", "dddd", "eeee"],
+  "time": [
+    ["5 mins / day", "Relax"],
+    ["10 mins / day", "Normal"],
+    ["15 mins / day", "Serious"],
+    ["30 mins / day", "Great"],
+    ["60 mins / day", "Awesome"]
+  ],
+  "chapter": [
+    [
+      "doc",
+      "Personalized Learning",
+      "Helps to learn the intricate blockchain concept in a fun and simple way."
     ],
-    "chapter": [
-        ["Mastering a lot of", "ethereum slakilkj"],
-        ["Mastering a lot of", "ethereum slakilkj"],
-        ["Mastering a lot of", "ethereum slakilkj"]
+    [
+      "star2",
+      "Enhanced Motivation",
+      "Motivate learners through reward systems, competition, and goal achievements."
     ],
-
-    "topic": ["Topic 2", "Topic 3", "Topic 4", "Topic 5", "Topic 6"],
-    "detail": [
-        ["Previous Hash", "Coinbase", "State Root", "Merkle Root"],
-        [
-            "Public Key Encryption",
-            "Short-Term Data Protection",
-            "Digital Signatures",
-            "Security Protocols"
-        ]
-    ],
-
-    "dailyMission": [
-        ["Get hearts", "1/30", "💖"],
-        ["Get Badges", "1/100", "✨"],
-        ["Get 2 perfect lessons", "0/2", "🫣"],
-        ["Complete  Challenge", "0/50", "🤔"]
+    [
+      "time",
+      "Flexible Learning",
+      "You can continue learing anytime and anywhere."
     ]
+  ],
+  "question": [
+    {
+      "text": "Please select two common elements found in the headers of Ethereum and Bitcoin.",
+      "img": ""
+    },
+    {
+      "text": "When is this cryptography commonly not preferred for use?",
+      "img": "curve"
+    },
+    { "text": "What does the Genesis Block mean?", "img": "" }
+  ],
+  "topic": ["Topic 2", "Topic 3", "Topic 4", "Topic 5", "Topic 6"],
+  "detail": [
+    ["Previous Hash", "Coinbase", "State Root", "Merkle Root"],
+    [
+      "Public Key Encryption",
+      "Short-Term Data Protection",
+      "Digital Signatures",
+      "Security Protocols"
+    ],
+    [
+      "The first mined block",
+      "A block positioned in the middle of the blockchain",
+      "The last created block",
+      "The largest block in the blockchain"
+    ]
+  ],
+
+  "dailyMission": [
+    ["Get hearts", "1/30", "💖"],
+    ["Get Badges", "1/100", "✨"],
+    ["Get 2 perfect lessons", "0/2", "🫣"],
+    ["Complete  Challenge", "0/50", "🤔"]
+  ]
 }

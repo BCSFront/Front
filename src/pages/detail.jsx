@@ -8,14 +8,12 @@ import "../style/detail.css";
 import { useEffect, useState, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { AppContext } from "../App";
+import DetailQuestion from "../components/DetailQuestion";
 
 const Detail = () => {
   const { id } = useParams();
   const [answer, setAnswer] = useState();
   const { num, setNum, showModal, setShowModal } = useContext(AppContext);
-  // const onClickCheckA = ()  => {
-
-  // }
 
   useEffect(() => {
     console.log(answer);
@@ -23,33 +21,19 @@ const Detail = () => {
 
   return (
     <div className="overflow-y-auto">
-      <div className="min-h-screen">
-        <div>
-          {" "}
-          <Link to="/topic">
-            <Arrow2 num={num} />
-            {/* {" "}
-                    d = data.image[ id - 1 ] */}
-          </Link>
-          {/* 텍스트 넣어주기 */}
-          <div className="mt-[37px] mx-[39px]">
-            <div className="text">
-              Please select two common elements found in the headers of Ethereum
-              and Bitcoin.
-            </div>
+      <div className="flex flex-col justify-center min-h-screen">
+        <Link to="/topic">
+          <Arrow2 num={num} />
+        </Link>
 
-            {/* detail2 페이지에 나와야 하는 부분 */}
-            <div className="text">
-              When is this cryptography commonly not preferred for use?
-            </div>
+        <DetailQuestion
+          text={data.question[id - 1].text}
+          img={data.question[id - 1].img}
+        />
 
-            <div className="line mt-[33px] mb-[20px]"></div>
-          </div>
-        </div>
+        <div className="line mt-[33px] mb-[20px]"></div>
 
-        <div>{/* 여기는 300 상단 바  */}</div>
-
-        <div className="  mt-[24px] mx-[39px] mb-[52px]">
+        <div className="mt-[24px] mx-[39px] mb-[52px]">
           <div>
             {data.detail[id - 1].map((v, i) => (
               <Detail1Box
@@ -61,18 +45,15 @@ const Detail = () => {
             ))}
           </div>
         </div>
-        {/* <Link to="/detail"> */}
-        {/* 보라색 버튼 ~! */}
+
         <div
           className=" checkABox ml-[21px] "
           onClick={() => setShowModal(!showModal)}
         >
           <BtnContinue title="CHECK ANSWER" />
         </div>
-        {/* </Link> */}
-        {showModal && <GModal title="Correct!" title2="CONTINUE" />}
 
-        {/* <RModal /> */}
+        {showModal && <GModal title="Correct!" title2="CONTINUE" />}
       </div>
     </div>
   );
