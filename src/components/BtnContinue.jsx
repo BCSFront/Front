@@ -43,7 +43,8 @@ const BtnContinue = (props) => {
 
     return (
         <div class="btnBig mb-[50px]">
-            <button class="text-white" onClick={Login}>
+            {/* <button class="text-white" onClick={Login}> */}
+            <button className="button-text " onClick={Login}>
                 {props.title}
             </button>
         </div>

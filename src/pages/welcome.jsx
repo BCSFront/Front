@@ -16,7 +16,7 @@ const Welcome = () => {
       />
       <div className="mt-[35.5px] rectangle bg-red-100"></div>
       <div className="mt-[31px] text-title">Ethcation</div>
-      <div className="mt-[4px] flex flex-col justify-center items-center mb-[156px]">
+      <div className="text-detail mt-[4px] flex flex-col justify-center items-center mb-[156px]">
         <div>Learn Ethereum</div>
         <div>whenever and wherever you want.</div>
       </div>

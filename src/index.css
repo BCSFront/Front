@@ -16,11 +16,36 @@
 }
 
 .text-title {
+    color: var(--greyscale-900, #212121);
+    /* text-align: center; */
+    font-family: Nunito;
     font-size: 44px;
-    line-height: 70.4px;
     font-style: normal;
-    color: #212121;
     font-weight: 700;
+    line-height: 160%; /* 70.4px */
+}
+.text-detail {
+    /* align-self: stretch; */
+    color: var(--greyscale-700, #616161);
+    text-align: center;
+    /* H5/bold */
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+}
+
+.button-text {
+    color: var(--others-white, #fff);
+    text-align: center;
+    /* body/large/bold */
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.2px;
 }
 
 body {
