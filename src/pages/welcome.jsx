@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import BtnContinue from "../components/BtnContinue";
 import "../style/welcome.css";
 import React from "react";
+import { useEffect, useContext } from "react";
+import { AppContext } from "../App";
 
 const Welcome = () => {
+  const { address } = useContext(AppContext);
   return (
     <div className="flex flex-col items-center justify-between grow ">
       <img
@@ -17,9 +20,15 @@ const Welcome = () => {
         <div>Learn Ethereum</div>
         <div>whenever and wherever you want.</div>
       </div>
-      <Link to="/signUp">
-        <BtnContinue title="CREATE A PROFILE"></BtnContinue>
-      </Link>
+      {address == "" ? (
+        <Link to="/signUp">
+          <BtnContinue title="CREATE A PROFILE"></BtnContinue>
+        </Link>
+      ) : (
+        <Link to="/home">
+          <BtnContinue title="Login"></BtnContinue>
+        </Link>
+      )}
     </div>
   );
 };

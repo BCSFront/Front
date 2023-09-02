@@ -11,8 +11,8 @@ const Home2 = () => {
     setBgPurple(2);
   }, []);
   return (
-    <div className="flex flex-col">
-      <div className="bg-Topic absolute top-0 text-white">
+    <div className="flex flex-col justify-center min-h-screen">
+      <div className="bg-Topic  top-[60px] absolute  text-white">
         <div className="flex">
           <Statusbar></Statusbar>
         </div>
@@ -24,7 +24,7 @@ const Home2 = () => {
         <div className="mt-[50px] pb-[95px]">
           <img src="./images/home.svg" alt="" />
         </div>
-        <Link to="/mypage">
+        <Link to="/home">
           <BtnContinue title="START" />
         </Link>
       </div>
