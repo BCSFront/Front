@@ -8,8 +8,8 @@ import { Presets, Client } from 'userop';
 import t_abi from '../tokenABI/erc20.json';
 import n_abi from '../tokenABI/erc721.json';
 
-const token_add = '0xdC6dE894Fb767538891a48d1fAF28B29993F1034';
-const nft_add = '0x4603F3a2dA59431E1Cd2475A9e31A071B7581d34';
+const token_add = '0x92cA56ea530d4d648078c6127F6B0dC53C9c1a37';
+const nft_add = '0x1a3e2Bf4C257c2213385CE24E7a8a17Ba59e4f78';
 
 const GModal = ({ title, title2, index, length }) => {
   const signingKey = process.env.REACT_APP_SIGNING_KEY;
@@ -57,12 +57,13 @@ const GModal = ({ title, title2, index, length }) => {
 
   const t_mint = async () => {
     try {
-      const destination_add = '0xB7dF0e2aE6Ec66D82446d42F9AC12eD6BfF22e62';
+      // const destination_add = address;
+      console.log(`local address : ${address}`);
       // destination_add : 토큰 받을 주소
       const mint = {
         to: token_add, // 컨트렉트 주소
         value: ethers.constants.Zero,
-        data: t_c.interface.encodeFunctionData('mint', [destination_add]), // 여기 들어감
+        data: t_c.interface.encodeFunctionData('mint', [address]), // 여기 들어감
       };
 
       console.log('set token mint');
@@ -92,12 +93,12 @@ const GModal = ({ title, title2, index, length }) => {
   const n_mint = async () => {
     try {
       const metadataURI = "https://olbm.mypinata.cloud/ipfs/QmbzV8qMuzPxe3ML6GVfrGpAAcN3n8q1GLvyt85A5HXopP";
-      const destination_add = '0x97b54C834A814aaeEAa8C1DBeD2512a18138C8Ad';
+      // const destination_add = address;
       // destination_add : NFT 받을 주소
       const mint = {
         to: nft_add, // 컨트렉트 주소
         value: ethers.constants.Zero,
-        data: n_c.interface.encodeFunctionData('mint', [destination_add, metadataURI]), // 여기 들어감
+        data: n_c.interface.encodeFunctionData('mint', [address, metadataURI]), // 여기 들어감
       };
 
       console.log('set nft mint');
@@ -125,9 +126,9 @@ const GModal = ({ title, title2, index, length }) => {
   useEffect(() => {
     connect();
     console.log(address)
-    console.log(process.env.REACT_APP_SIGNING_KEY)
-    console.log(process.env.REACT_APP_RPC_URL)
-    console.log(process.env.REACT_APP_PAYMASTER_URL)
+    console.log(`signing key : ${process.env.REACT_APP_SIGNING_KEY}`)
+    console.log(`RPC url : ${process.env.REACT_APP_RPC_URL}`)
+    console.log(`paymaster url : ${process.env.REACT_APP_PAYMASTER_URL}`)
     console.log('ok');
   }, []);
 

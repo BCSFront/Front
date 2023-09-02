@@ -10,11 +10,6 @@
 				"internalType": "string",
 				"name": "_symbol",
 				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "_metadataUri",
-				"type": "string"
 			}
 		],
 		"stateMutability": "nonpayable",
@@ -94,6 +89,11 @@
 				"internalType": "address",
 				"name": "to",
 				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_metadataURI",
+				"type": "string"
 			}
 		],
 		"name": "mint",
@@ -282,7 +282,7 @@
 	},
 	{
 		"inputs": [],
-		"name": "metadataUri",
+		"name": "metadataURI",
 		"outputs": [
 			{
 				"internalType": "string",
@@ -374,7 +374,7 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "tokenId",
+				"name": "_tokenId",
 				"type": "uint256"
 			}
 		],
