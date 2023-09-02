@@ -3,6 +3,10 @@ import "../style/challengeTarget.css";
 const MissionBox = (props) => {
     return (
         <div className="cardBox  mt-[20px] mb-[20px]">
+            {/* <DetailQuestion
+                    text={data.question[id - 1].text}
+                    img={data.question[id - 1].img}
+                /> */}
             <div className="icon bg-emerald-100">{props.emoticon}</div>
             <div className="mr-[24px]">
                 <div className="cardText ">{props.detail1}</div>
