@@ -13,11 +13,11 @@ import DetailQuestion from "../components/DetailQuestion";
 const Detail = () => {
   const { id } = useParams();
   const [answer, setAnswer] = useState();
+  const [isActive, setIsActive] = useState([]);
   const { num, setNum, showModal, setShowModal } = useContext(AppContext);
 
   useEffect(() => {
     console.log(answer);
-    console.log(data.detail.length);
   }, [answer]);
 
   return (
@@ -37,12 +37,15 @@ const Detail = () => {
 
           <div className="mt-[24px] mx-[39px] mb-[52px]">
             <div>
-              {data.detail[id - 1].map((v, i) => (
+              {data?.detail[id - 1].map((v, i) => (
                 <Detail1Box
                   key={i}
+                  idx={i}
                   detail={v}
                   answer={answer}
                   setAnswer={setAnswer}
+                  isActive={isActive}
+                  setIsActive={setIsActive}
                 />
               ))}
             </div>
