@@ -75,3 +75,20 @@
     border: 3px solid #6949ff;
     /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
 }
+
+.line {
+    width: 336px;
+    height: 1px;
+    background: #eee;
+}
+
+.text {
+    width: 336px;
+    color: var(--greyscale-900, #212121);
+    /* H4/bold */
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 38.4px */
+}

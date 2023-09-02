@@ -44,3 +44,13 @@
     gap: 12px;
     align-self: stretch;
 }
+.tttext {
+    width: 60px;
+    color: var(--primary-500, #6949ff);
+    /* H6/bold */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 28.8px */
+}

@@ -17,6 +17,7 @@ import Detail from "./pages/detail";
 import ChallengeTarget from "./pages/challengeTarget";
 import ChallengeBadge from "./pages/challengeBadge";
 import { createContext, useState } from "react";
+
 export const AppContext = createContext();
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
   const [privateKey, setPrivateKey] = useState("");
   const [bgPurple, setBgPurple] = useState(1);
   const [nickName, setNickName] = useState("");
-
+  const [num, setNum] = useState(0);
+  const [showModal, setShowModal] = useState(false);
   return (
     <AppContext.Provider
       value={{
@@ -36,6 +38,10 @@ function App() {
         setBgPurple,
         nickName,
         setNickName,
+        num,
+        setNum,
+        showModal,
+        setShowModal,
       }}
     >
       <BrowserRouter>
@@ -55,6 +61,7 @@ function App() {
             <Route path="/mypage" element={<Mypage />} />
             <Route path="/topic" element={<Topic />} />
             <Route path="/detail/:id" element={<Detail />} />
+
             <Route path="/challengeTarget" element={<ChallengeTarget />} />
             <Route path="/challengeBadge" element={<ChallengeBadge />} />
           </Routes>
