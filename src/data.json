@@ -53,9 +53,8 @@
   ],
 
   "dailyMission": [
-    ["Get hearts", "1/30", "💖"],
-    ["Get Badges", "1/100", "✨"],
-    ["Get 2 perfect lessons", "0/2", "🫣"],
-    ["Complete  Challenge", "0/50", "🤔"]
+    ["Get hearts", "1/30", "badgeHeart"],
+    ["Complete Challenge", "1/100", "badgeToken"],
+    ["Get NFTs", "1/100", "badgeBookmark"]
   ]
 }

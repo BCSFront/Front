@@ -17,12 +17,13 @@ const Detail = () => {
 
   useEffect(() => {
     console.log(answer);
+    console.log(data.detail.length);
   }, [answer]);
 
   return (
     <>
       <div className="overflow-y-auto flex">
-        <div className="flex flex-col justify-center min-h-screen">
+        <div className="flex flex-col justify-start min-h-screen">
           <Link to="/topic">
             <Arrow2 num={num} />
           </Link>
@@ -48,32 +49,22 @@ const Detail = () => {
           </div>
 
           <div
-            className=" checkABox ml-[21px] "
+            className="checkABox ml-[21px] "
             onClick={() => setShowModal(!showModal)}
           >
             <BtnContinue title="CHECK ANSWER" />
           </div>
         </div>
       </div>
-      <div className="  ">
+      <div>
         {showModal && (
-          <div
-            class="relative z-10"
-            aria-labelledby="modal-title"
-            role="dialog"
-            aria-modal="true"
-          >
-            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
-            <div class="fixed inset-0 z-10 overflow-y-auto">
-              <div class="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0">
-                <GModal
-                  title="Correct!"
-                  title2="CONTINUE"
-                  className="relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all "
-                />
-              </div>
-            </div>
-          </div>
+          <GModal
+            length={data.detail.length}
+            index={Number(id) + 1}
+            title="Correct!"
+            title2="CONTINUE"
+            className="relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all "
+          />
         )}
       </div>
     </>
