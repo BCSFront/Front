@@ -35,7 +35,13 @@
     },
     { "text": "What does the Genesis Block mean?", "img": "" }
   ],
-  "topic": ["Topic 2", "Topic 3", "Topic 4", "Topic 5", "Topic 6"],
+  "topic": [
+    "P2P Village",
+    "Consensus Citadel",
+    "Smart Contract Oasis",
+    "Token Town",
+    "Governance Garden"
+  ],
   "detail": [
     ["Previous Hash", "Coinbase", "State Root", "Merkle Root"],
     [

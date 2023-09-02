@@ -3,6 +3,7 @@ import { AppContext } from "../App";
 import "../style/myPage.css";
 import MissionBox from "../components/MissionBox";
 import data from "../data.json";
+import Footer from "../components/Footer";
 
 const Mypage = () => {
   const { address, privateKe, nickname } = useContext(AppContext);
@@ -17,18 +18,12 @@ const Mypage = () => {
           <div className="account-box mr-[16px]">Account</div>
 
           {/* 홈버튼 + mypage 버튼으로 수정함  */}
-          <div className="flex gap-5">
+          <div className="flex  gap-5">
             <div>
-              <img src="./images/homeicon.svg" alt="home" />
-              <div className="home">Home</div>
+              <img src="./images/mypage-send.svg" alt="" />
             </div>
             <div className="mypage-box ">
-              <img
-                src="./images/mypage.svg "
-                className="mx-auto"
-                alt="mypage"
-              />
-              <div className="mypage">MyPage</div>
+              <img src="./images/mypage-send2.svg" alt="" />
             </div>
           </div>
         </div>
@@ -63,7 +58,6 @@ const Mypage = () => {
           </div>
         </div>
         {/* challenge + 토글 하는 부분*/}
-
         <>
           <div className="challenge">Challenge</div>
 
@@ -127,6 +121,9 @@ const Mypage = () => {
             </div>
           )}
         </>
+      </div>
+      <div className=" sticky bottom-0">
+        <Footer />
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const Topic = () => {
           >
             <rect y="1" width="140" height="140" fill="#D9D9D9" />
           </svg> */}
-                    <img src="./images/.svg" alt="character img" />
+                    <img src="./images/topic-avator.svg" alt="character img" />
                     <img src="./images/bubble topic.svg" alt="bubble topic" />
                 </div>
 
@@ -35,7 +35,9 @@ const Topic = () => {
                     <div className="mx-[39px]">
                         <Link to="/detail/1">
                             <div className="mb-[20px] topic-box1">
-                                <div className="topic-box2">Topic 1</div>
+                                <div className="topic-box2">
+                                    Blockchain Forest
+                                </div>
                                 <svg
                                     width="8"
                                     height="16"

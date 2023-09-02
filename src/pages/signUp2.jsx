@@ -10,7 +10,9 @@ const SignUp2 = () => {
                     alt="union"
                     className="mt-[126px]"
                 />
-                <div className="mt-[15.27px] rectangle bg-red-100"></div>
+                <div className="mt-[15.27px] rectangle ">
+                    <img src="./images/avator.svg" alt="avator" />
+                </div>
                 <div className="mt-[16px] text-title">Hurray!</div>
                 <div className="text-detail mt-[4px] flex flex-col justify-center items-center">
                     <div>Your profile has been created</div>
