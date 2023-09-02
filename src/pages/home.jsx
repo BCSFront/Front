@@ -4,6 +4,7 @@ import "../style/home.css";
 import { Statusbar } from "../components/Statusbar";
 import { useEffect, useContext } from "react";
 import { AppContext } from "../App";
+import Footer from "../components/Footer";
 
 const Home = () => {
     const { setBgPurple } = useContext(AppContext);
@@ -28,6 +29,7 @@ const Home = () => {
                     <BtnContinue title="START" />
                 </Link>
             </div>
+            <Footer />
         </div>
     );
 };

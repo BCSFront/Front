@@ -3,6 +3,7 @@ import { AppContext } from "../App";
 import "../style/myPage.css";
 import MissionBox from "../components/MissionBox";
 import data from "../data.json";
+import Footer from "../components/Footer";
 
 const Mypage = () => {
     const { address, privateKey } = useContext(AppContext);
@@ -85,12 +86,12 @@ const Mypage = () => {
                     alignItems="center"
                 ></div>
                 {/*nft카드 폼은 여기다 일단 만들어 둡니당~!~ */}
-                <div className="nft-card1 ">
+                <div className="nft-card1 mb-[20px]">
                     <div className="flex">
                         <div className="t2023  w-[194px]">2023</div>
                         <div className="tnft">1 NFT</div>
                     </div>
-                    <div className=" nft w-[286px] h-[290px]">
+                    <div className=" nft w-[286px] h-[290px] ">
                         <div class="  typing-indicator">
                             <div class="typing-circle"></div>
                             <div class="typing-circle"></div>
@@ -101,6 +102,9 @@ const Mypage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className=" sticky bottom-0">
+                <Footer />
             </div>
         </div>
     );
