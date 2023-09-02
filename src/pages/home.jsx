@@ -12,13 +12,12 @@ const Home = () => {
         setBgPurple(2);
     }, []);
     return (
-        // <div className=" overflow-y-auto">
         <div className="flex flex-col justify-center min-h-screen">
             <div className="bg-Topic top-[60px] absolute text-white">
                 <div className="flex">
                     <Statusbar></Statusbar>
                 </div>
-                <div className="flex justify-center items-center mt-[10px]">
+                <div className="flex justify-center items-center ">
                     <img src="./images/topic.svg" alt="topic" />
                 </div>
             </div>
@@ -29,9 +28,6 @@ const Home = () => {
                 <Link to="/topic">
                     <BtnContinue title="START" />
                 </Link>
-            </div>
-            <div className=" sticky bottom-0">
-                <Footer />
             </div>
         </div>
     );

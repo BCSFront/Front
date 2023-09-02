@@ -5,6 +5,7 @@ import TopicBox from "../components/TopicBox";
 import data from "../data.json";
 import { useEffect, useContext } from "react";
 import { AppContext } from "../App";
+import Footer from "../components/Footer";
 
 const Topic = () => {
     const { setBgPurple } = useContext(AppContext);
@@ -57,6 +58,9 @@ const Topic = () => {
                         ))}
                     </div>
                 </div>
+            </div>
+            <div className=" sticky bottom-0">
+                <Footer />
             </div>
         </div>
     );
