@@ -1,8 +1,7 @@
 import "../style/gmodal.css";
 import { Link, useNavigate } from "react-router-dom";
-import { useContext } from "react";
 import { AppContext } from "../App";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { ethers } from "ethers";
 import { Presets, Client } from "userop";
 import t_abi from "../tokenABI/erc20.json";
@@ -11,7 +10,7 @@ import n_abi from "../tokenABI/erc721.json";
 const token_add = "0x92cA56ea530d4d648078c6127F6B0dC53C9c1a37";
 const nft_add = "0x1a3e2Bf4C257c2213385CE24E7a8a17Ba59e4f78";
 
-const GModal = ({ title, title2, index, length, setIsActive, setNFT }) => {
+const GModal = ({ title, title2, index, length, setIsActive }) => {
   const signingKey = process.env.REACT_APP_SIGNING_KEY;
   const rpcUrl = process.env.REACT_APP_RPC_URL;
   const { address } = useContext(AppContext);
@@ -25,6 +24,7 @@ const GModal = ({ title, title2, index, length, setIsActive, setNFT }) => {
   const { num, setNum, showModal, setShowModal } = useContext(AppContext);
   const navigate = useNavigate();
 
+  const { setNFT } = useContext(AppContext);
   const onClickBtn = () => {
     setNum(num + 100);
     setShowModal(!showModal);
