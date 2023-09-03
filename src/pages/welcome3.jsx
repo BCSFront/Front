@@ -17,7 +17,7 @@ const Welcome3 = () => {
             ))}
           </div>
         </div>
-        <Link to="/home">
+        <Link to="/topic">
           <BtnContinue title="CONTINUE" className="mb-[55px] mx-[41px]" />
         </Link>
       </div>
