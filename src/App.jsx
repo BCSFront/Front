@@ -26,6 +26,7 @@ function App() {
   const [nickName, setNickName] = useState("");
   const [num, setNum] = useState(0);
   const [showModal, setShowModal] = useState(false);
+  const [NFT, setNFT] = useState(false);
   return (
     <AppContext.Provider
       value={{
@@ -41,6 +42,8 @@ function App() {
         setNum,
         showModal,
         setShowModal,
+        NFT,
+        setNFT,
       }}
     >
       <BrowserRouter>

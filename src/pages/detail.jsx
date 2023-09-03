@@ -22,8 +22,8 @@ const Detail = () => {
 
   return (
     <>
-      <div className="overflow-y-auto flex">
-        <div className="flex flex-col justify-start min-h-screen">
+      <div className="overflow-y-auto flex flex-col justify-start items-center ">
+        <div className="">
           <Link to="/topic">
             <Arrow2 num={num} />
           </Link>
@@ -65,6 +65,7 @@ const Detail = () => {
             length={data.detail.length}
             index={Number(id) + 1}
             title="Correct!"
+            setIsActive={setIsActive}
             title2="CONTINUE"
             className="relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all "
           />

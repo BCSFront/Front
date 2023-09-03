@@ -1,9 +1,12 @@
+import { AppContext } from "../App";
 import MissionBox from "../components/MissionBox";
 import data from "../data.json";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 const GoalNFT = () => {
   const [btnState, setBtnState] = useState(true);
+  const { NFT } = useContext(AppContext);
+
   return (
     <>
       {btnState ? (
@@ -70,6 +73,11 @@ const GoalNFT = () => {
               <div className="tnft">1 NFT</div>
             </div>
             <div className=" nft w-[286px] h-[290px]">
+              {NFT ? (
+                <img src="./images/certification.png" alt="" />
+              ) : (
+                <img src="./images/nftback.png" alt="" />
+              )}
               {/* 로딩중 페이지 */}
               {/* <div class="  typing-indicator">
                     <div class="typing-circle"></div>
