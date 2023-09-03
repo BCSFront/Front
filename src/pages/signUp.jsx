@@ -3,9 +3,14 @@ import BtnContinue from "../components/BtnContinue";
 import { useState } from "react";
 import "../style/signUp.css";
 import { Link } from "react-router-dom";
+import { useEffect, useContext } from "react";
+import { AppContext } from "../App";
 
 const SignUp = () => {
-  const [inputValue, setInputValue] = useState("");
+  const { nickName, setNickName } = useContext(AppContext);
+  useEffect(() => {
+    console.log(nickName);
+  }, [nickName]);
   return (
     <div className="flex flex-col items-center justify-between grow">
       <div>
@@ -26,8 +31,8 @@ const SignUp = () => {
             <input
               className="w-[320px] mt-[16px] h-[38px] border-b-[1px] border-[#6949FF]"
               type="text"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
+              value={nickName}
+              onChange={(e) => setNickName(e.target.value)}
             />
           </div>
         </div>

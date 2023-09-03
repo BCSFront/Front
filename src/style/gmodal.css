@@ -1,0 +1,47 @@
+.gmodal-box1 {
+  display: flex;
+  width: 380px;
+  padding: 24px 24px 36px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: var(--alerts-status-success, #12d18e);
+  border-radius: 20px;
+}
+
+.gmodal-text1 {
+  flex: 1 0 0;
+  color: var(--others-white, #fff);
+
+  /* H4/bold */
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+}
+
+.gmodal-button {
+  display: flex;
+  width: 332px;
+  padding: 18px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 100px;
+  background: var(--others-white, #fff);
+}
+
+.gmodal-button-text {
+  flex: 1 0 0;
+  color: var(--alerts-status-success, #12d18e);
+  text-align: center;
+  /* body/large/bold */
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.2px;
+}

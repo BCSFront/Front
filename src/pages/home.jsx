@@ -1,23 +1,35 @@
 import BtnContinue from "../components/BtnContinue";
+import { Link } from "react-router-dom";
+import "../style/home.css";
+import { Statusbar } from "../components/Statusbar";
+import { useEffect, useContext } from "react";
+import { AppContext } from "../App";
+import Footer from "../components/Footer";
 
 const Home = () => {
+  const { setBgPurple } = useContext(AppContext);
+  useEffect(() => {
+    setBgPurple(2);
+  }, []);
   return (
-    <div className=" flex flex-col">
-      {/* <div className="w-14 h-14 left-[49.82px] top-[29.93px] absolute bg-red-100"></div> */}
+    <div className="flex flex-col justify-center min-h-screen">
+      <div className="bg-Topic top-[60px] absolute text-white">
+        <div className="flex">
+          <Statusbar></Statusbar>
+        </div>
+        <div className="flex justify-center items-center ">
+          <img src="./images/topic.svg" alt="topic" />
+        </div>
+      </div>
       <div className="w-[414px] h-[742px] flex flex-col justify-between items-center ">
-        <div className="mt-[50px] pb-[95px]  ">
+        <div className="mt-[50px] pb-[95px]">
           <img src="./images/home.svg" alt="" />
         </div>
-
-        <BtnContinue title="START" />
+        <Link to="/detail/1">
+          <BtnContinue title="START" />
+        </Link>
       </div>
     </div>
   );
 };
 export default Home;
-
-{
-  /* <div className="w-40 h-36 left-0 top-0 absolute bg-stone-300 rounded-full" />
-<div className="w-40 h-28 left-0 top-0 absolute bg-neutral-200 rounded-full" />
-<div className="w-32 h-24 left-[9.58px] top-[11.19px] absolute bg-zinc-100 rounded-full" /> */
-}
